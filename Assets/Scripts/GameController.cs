@@ -12,7 +12,7 @@ public class GameController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timer = Time.deltaTime;
+        timer = 0;
     }
 
     // Update is called once per frame
@@ -38,7 +38,7 @@ public class GameController : MonoBehaviour
 
     void GamePlay()
     {
-        SetTimer();
+        AddTimer();
     }
 
     void DebugList()
@@ -47,8 +47,8 @@ public class GameController : MonoBehaviour
     }
 
 
-    void SetTimer()
+    void AddTimer()
     {
-        timer = Time.deltaTime;
+        timer += Time.deltaTime;
     }
 }

@@ -345,7 +345,8 @@ MonoBehaviour:
   bulletPrefubs:
   - {fileID: 6263703512646976077, guid: c679583796ad3b04693050ff9deaf5c9, type: 3}
   ShotStart: {fileID: 6251838756722655902}
-  StageTransform: {fileID: 795432545513474025}
+  PlayerTransfrom: {fileID: 3808016713917140617, guid: b0bb0cd12cca3554cabd32a02f28e976, type: 3}
+  ShotSpeed: 50
 --- !u!1 &795432545513283079
 GameObject:
   m_ObjectHideFlags: 0
