@@ -11,16 +11,22 @@ public class Gun : MonoBehaviour
 
     [SerializeField] GameObject[] bulletPrefubs;
     [SerializeField] Transform ShotStart;
-    [SerializeField] Transform PlayerTransfrom;
     [SerializeField] float ShotSpeed = 50.0f;
     bool isShot;
+
+    Transform PlayerTransfrom;
+
+    void SetPlayerTransform(Transform playerTransform)
+    {
+        PlayerTransfrom = playerTransform;
+    }
 
     // Start is called before the first frame update
     void Start()
     {
         isShot = true;
         SetAngle();
-        //BulletShot();
+        BulletShot();
     }
 
     // Update is called once per frame
@@ -100,6 +106,8 @@ public class Gun : MonoBehaviour
         int index = Random.Range(0, bulletPrefubs.Length);
         return bulletPrefubs[index];
     }
+
+    
 
 
     const int BaseReloadCount = 4;
